@@ -15,7 +15,7 @@ const MagicButton = ({
 }) => {
   return (
     <div>
-      <button className="relative inline-block group p-[5px] overflow-hidden rounded-full focus:outline-none md:w-60 md:mt-10">
+      <button className="relative inline-block group p-[5px] overflow-hidden rounded-full focus:outline-none md:w-60 md:mt-10" onClick={handleClick}>
   {/* Outer gradient background with rounded-full */}
   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-transform duration-300 group-hover:scale-110 rounded-full" />
   {/* Inner text container with rounded-full */}
