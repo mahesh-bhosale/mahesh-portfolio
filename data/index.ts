@@ -170,33 +170,34 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "JavaScript Developer Intern",
-      desc: "Worked on dynamic web applications using JavaScript, React, and Node.js.",
+      title: "Web Developer",
+      desc: "Worked on building responsive and dynamic web applications using Next.js and Tailwind CSS. Deployed projects using Vercel.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Web Development Intern at Rentkar",
-      desc: "Developed scalable web applications using MERN stack and AWS.",
+      title: "Database Integration Specialist",
+      desc: "Integrated Neon PostgreSQL and Drizzle ORM for a robust backend in a student attendance tracking system.",
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
-        id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
-      },
-      {
-        id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
-        className: "md:col-span-2",
-        thumbnail: "/exp4.svg",
-      },
+      id: 3,
+      title: "Authentication System Developer",
+      desc: "Implemented secure authentication flows using Kinde, including multi-factor authentication and email verification.",
+      className: "md:col-span-2",
+      thumbnail: "/exp3.svg",
+    },
+    {
+      id: 4,
+      title: "Full Stack Web Developer",
+      desc: "Developed a student attendance tracking system using Next.js, PostgreSQL, and Drizzle ORM, with features like attendance recording, reporting, and student management.",
+      className: "md:col-span-2",
+      thumbnail: "/exp4.svg",
+    },
   ];
+  
   
   export const socialMedia = [
     {
