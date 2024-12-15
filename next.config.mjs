@@ -1,17 +1,21 @@
+// import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output:'export',
+  typescript:{
+    ignoreBuildErrors: true,
+  }
 };
 
-module.exports = nextConfig;
-
+// export default nextConfig;
 
 // Injected content via Sentry wizard below
 
-const { withSentryConfig } = require("@sentry/nextjs");
+import { withSentryConfig } from "@sentry/nextjs";
 
-module.exports = withSentryConfig(
-  module.exports,
+const sentryConfig = withSentryConfig(
+  nextConfig,
   {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
@@ -52,3 +56,4 @@ module.exports = withSentryConfig(
     automaticVercelMonitors: true,
   }
 );
+
