@@ -1,9 +1,87 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
+    { name: "Skills", link: "#skills" },
     { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
+  
+export const skillsData = [
+  {
+    category: "All",
+    items: [
+      "Node.js",
+      "Front-End Development",
+      "Back-End Web Development",
+      "Secure Authentication",
+      "Git",
+      "REST APIs",
+      "Object-Relational Mapping (ORM)",
+      "Software Deployment",
+      "Resolving Issues",
+      "PHP",
+      "Full-Stack Development",
+      "Java Swing",
+      "Database Management System (DBMS)",
+      "Netbeans Platform",
+      "Java Database Connectivity (JDBC)",
+      "XAMPP",
+      "Java",
+      "Next.js",
+      "Software Development",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "JavaScript",
+      "Tailwind CSS",
+      "Cascading Style Sheets (CSS)",
+      "HTML5",
+      "React.js",
+      "Web Development"
+    ]
+  },
+  {
+    category: "Industry Knowledge",
+    items: [
+      "Front-End Development",
+      "Back-End Web Development",
+      "Full-Stack Development",
+      "Web Development",
+      "Secure Authentication",
+      "Software Deployment",
+      "Software Development",
+      "Database Management System (DBMS)"
+    ]
+  },
+  {
+    category: "Tools & Technologies",
+    items: [
+      "Node.js",
+      "Git",
+      "REST APIs",
+      "Object-Relational Mapping (ORM)",
+      "PHP",
+      "Java Swing",
+      "Netbeans Platform",
+      "Java Database Connectivity (JDBC)",
+      "XAMPP",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "JavaScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Cascading Style Sheets (CSS)",
+      "HTML5",
+      "React.js"
+    ]
+  },
+  {
+    category: "Interpersonal Skills",
+    items: ["Resolving Issues"]
+  }
+];
+
   
   export const gridItems = [
     {
