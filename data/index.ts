@@ -291,3 +291,133 @@ export const skillsData = [
       img: "/link.svg",
     },
   ];
+
+  export const timelineData = [
+    {
+      time: "Late 2022",
+      content: [
+        {
+          text: "Started Computer Engineering at Terna Engineering College (University of Mumbai), Nerul.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/late-2022-image.png",
+        alt: "Late 2022 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "Early 2023",
+      content: [
+        {
+          text: "Learned C Programming and completed foundational programming concepts.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/early-2023-image.png",
+        alt: "Early 2023 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "Mid 2023",
+      content: [
+        {
+          text: "Began learning basics of HTML and CSS to understand web development.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/mid-2023-image.png",
+        alt: "Mid 2023 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "Late 2023",
+      content: [
+        {
+          text: "Started 3rd semester and learned Java and basics of MySQL.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/late-2023-image.png",
+        alt: "Late 2023 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "End of 2023",
+      content: [
+        {
+          text: "Built the Quiz Management System project using Java and MySQL.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/end-2023-image.png",
+        alt: "End 2023 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "Early 2024",
+      content: [
+        {
+          text: "Strengthened knowledge of HTML and CSS.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/early-2024-image.png",
+        alt: "Early 2024 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "Mid 2024",
+      content: [
+        {
+          text: "Learned Tailwind CSS, PHP, and MySQL. Built an E-commerce website (mini project) using HTML, CSS, JS, PHP, and MySQL. Completed 4th semester around May/June 2024.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/mid-2024-image.png",
+        alt: "Mid 2024 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "Mid 2024",
+      content: [
+        {
+          text: "Started learning React.js, basics of Node.js, and Next.js.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/mid-2024-2-image.png",
+        alt: "Mid 2024 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+    {
+      time: "End of 2024",
+      content: [
+        {
+          text: "Built the Student Attendance Tracker System using Next.js, PostgreSQL, Drizzle ORM, React.js, Tailwind CSS, and JavaScript.",
+          className: "text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8",
+        },
+      ],
+      image: {
+        src: "https://example.com/end-2024-image.png",
+        alt: "End 2024 Event Image",
+        className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      },
+    },
+  ];
+  
