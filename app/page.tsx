@@ -7,9 +7,10 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/skills";
 import RecentProjects from "@/components/RecentProjects";
 import {FloatingNav} from "@/components/ui/FloatingNav";
-import { navItems } from "@/data";
+import { navItems, timelineData } from "@/data";
 import { link } from "fs";
 import { FaHome } from "react-icons/fa";
+import { Timeline } from "@/components/ui/timeline";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Skills />
         <Clients />
         <Experience />
+        <Timeline data={timelineData} />
         <Approach />
         <Footer />
       </div>

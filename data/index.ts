@@ -302,8 +302,8 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/late-2022-image.png",
-        alt: "Late 2022 Event Image",
+        src: "/Terna collage.jpg",
+        alt: "Terna collage.jpg",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
     },
@@ -316,7 +316,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/early-2023-image.png",
+        src: "/CProgamming.webp",
         alt: "Early 2023 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -330,7 +330,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/mid-2023-image.png",
+        src: "/html css.jpg",
         alt: "Mid 2023 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -344,7 +344,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/late-2023-image.png",
+        src: "/java.jpeg",
         alt: "Late 2023 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -358,7 +358,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/end-2023-image.png",
+        src: "/Quiz.png",
         alt: "End 2023 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -372,7 +372,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/early-2024-image.png",
+        src: "css.jpeg",
         alt: "Early 2024 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -386,7 +386,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/mid-2024-image.png",
+        src: "/ecommerce.png",
         alt: "Mid 2024 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -400,7 +400,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/mid-2024-2-image.png",
+        src: "/next-framework.jpeg",
         alt: "Mid 2024 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
@@ -414,7 +414,7 @@ export const skillsData = [
         },
       ],
       image: {
-        src: "https://example.com/end-2024-image.png",
+        src: "/attendance.png",
         alt: "End 2024 Event Image",
         className: "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
       },
