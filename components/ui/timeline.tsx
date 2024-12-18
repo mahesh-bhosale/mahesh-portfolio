@@ -85,11 +85,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                   </p>
                 ))}
               </div>
-              <img
-                src={item.image.src}
-                alt={item.image.alt}
-                className={item.image.className}
-              />
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                {item.images.map((image, imgIdx) => (
+                  <img
+                    key={imgIdx}
+                    src={image.src}
+                    alt={image.alt}
+                    className={image.className}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         ))}
