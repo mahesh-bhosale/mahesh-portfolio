@@ -61,7 +61,7 @@ export const PinContainer = ({
 
 export const PinPerspective = ({
   title,
-  href,
+  // href, // Reserved for future use
 }: {
   title?: string;
   href?: string;

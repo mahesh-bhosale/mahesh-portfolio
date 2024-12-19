@@ -11,8 +11,7 @@ interface SkillsProps {
   skills: SkillCategory[];
 }
 
-const Skills: React.FC<SkillsProps> = ({ skills = [] }) => {  // Default value of an empty array
-//   console.log(skillsData);  // This will log the skills data to check if it's properly imported and passed
+const Skills: React.FC<SkillsProps> = () => {  // Default value of an empty array
 
   if (!skillsData.length) {
     return <div>No skills available</div>;  // Optional: Show a message if skills are empty
