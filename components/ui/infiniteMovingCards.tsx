@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -105,8 +106,8 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                    <div className="me-3">
-                        <img src="/profile.svg" alt="profile" />
+                    <div className="relative w-16 h-16 me-3">
+                        <Image src="/profile.svg" alt="profile" fill />
                     </div>
                     <div className="flex flex-col gap-1">
                   <span className=" text-xl leading-[1.6] text-white font-bold">

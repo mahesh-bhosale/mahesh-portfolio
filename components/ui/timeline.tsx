@@ -5,6 +5,7 @@ import {
   useTransform,
   motion,
 } from "framer-motion";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -87,10 +88,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 {item.images.map((image, imgIdx) => (
-                  <img
+                  <Image
                     key={imgIdx}
                     src={image.src}
                     alt={image.alt}
+                    width={1895}
+                    height={3960}
                     className={image.className}
                   />
                 ))}

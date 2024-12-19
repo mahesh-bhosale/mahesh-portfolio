@@ -1,6 +1,7 @@
 import React from 'react'
 import { companies, testimonials } from '@/data'
 import { InfiniteMovingCards } from './ui/infiniteMovingCards'
+import Image from 'next/image';
 
 const Clients = () => {
   return (
@@ -26,15 +27,18 @@ const Clients = () => {
           {companies.map(({id,img,name,nameImg}) => (
             <React.Fragment key={id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
-                <img
+              <Image
                   src={img}
                   alt={name}
+                  width={id === 4 || id === 5 ? 100 : 150}
+                  height={id === 4 || id === 5 ? 100 : 150} // Always provide height with width for proper layout
                   className="md:w-10 w-5"
                 />
-                <img
+                <Image
                   src={nameImg}
                   alt={name}
                   width={id === 4 || id === 5 ? 100 : 150}
+                  height={id === 4 || id === 5 ? 100 : 150} // Same here
                   className="md:w-24 w-20"
                 />
               </div>
