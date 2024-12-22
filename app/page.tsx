@@ -7,7 +7,7 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/skills";
 import RecentProjects from "@/components/RecentProjects";
 import {FloatingNav} from "@/components/ui/FloatingNav";
-import { navItems, timelineData } from "@/data";
+import { navItems, skillsData, timelineData } from "@/data";
 import { Timeline } from "@/components/ui/timeline";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <Hero/>
         <Grid/>
         <RecentProjects />
-        <Skills />
+        <Skills skills={skillsData} />
         <Clients />
         <Experience />
         <Timeline data={timelineData} />
