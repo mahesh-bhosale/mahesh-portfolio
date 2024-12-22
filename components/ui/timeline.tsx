@@ -14,11 +14,11 @@ interface TimelineEntry {
     text: string;
     className: string;
   }[];
-  image: {
+  images: {
     src: string;
     alt: string;
     className: string;
-  };
+  }[];
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
