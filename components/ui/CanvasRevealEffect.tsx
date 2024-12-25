@@ -278,9 +278,9 @@ const ShaderMaterial = ({
   }, [size.width, size.height, source, getUniforms]);
 
   return (
-    <mesh ref={ref}>
+    <mesh ref={ref} material={material}>
       <planeGeometry args={[2, 2]} />
-      <primitive object={material} attach="material" />
+      {/* <primitive object={material} attach="material" /> */}
     </mesh>
   );
 };

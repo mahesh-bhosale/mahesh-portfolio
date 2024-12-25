@@ -166,13 +166,17 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     globeRef.current
       .arcsData(data)
-      .arcStartLat(d => d.startLat)
-      .arcStartLng(d => d.startLng)
-      .arcEndLat(d => d.endLat)
-      .arcEndLng(d => d.endLng)
-      .arcColor(d => d.color)
-      .arcAltitude(d => d.arcAlt)
-      .arcStroke(() => [0.32, 0.28, 0.3][Math.round(Math.random() * 2)])
+      .arcStartLat((d) => (d as { startLat: number }).startLat * 1)
+      .arcStartLng((d) => (d as { startLng: number }).startLng * 1)
+      .arcEndLat((d) => (d as { endLat: number }).endLat * 1)
+      .arcEndLng((d) => (d as { endLng: number }).endLng * 1)
+      .arcColor((e: unknown) => (e as { color: string }).color)
+      .arcAltitude((e) => {
+        return (e as { arcAlt: number }).arcAlt * 1;
+      })
+      .arcStroke(() => {
+        return [0.32, 0.28, 0.3][Math.round(Math.random() * 2)];
+      })
       .arcDashLength(defaultProps.arcLength)
       .arcDashInitialGap((e) => (e as { order: number }).order * 1)
       .arcDashGap(15)
@@ -187,7 +191,10 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     globeRef.current
       .ringsData([])
-      .ringColor((e: unknown) => (t: unknown) => e.color(t))
+      .ringColor((e: unknown) => {
+        const event = e as { color: (t: unknown) => string };
+        return (t: unknown) => event.color(t);
+      })
       .ringMaxRadius(defaultProps.maxRings)
       .ringPropagationSpeed(RING_PROPAGATION_SPEED)
       .ringRepeatPeriod(
