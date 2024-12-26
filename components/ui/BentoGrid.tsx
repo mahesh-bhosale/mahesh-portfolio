@@ -1,14 +1,16 @@
 'use client'
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradiantBg";
 import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false }); 
 export const BentoGrid = ({
   className,
   children,
@@ -64,6 +66,12 @@ export const BentoGridItem = ({
 
   const handleCopy = async () => {
     const text = "maheshbhosale1212004@gmail.com";
+  
+    if (typeof window === "undefined") {
+      console.error("Clipboard functionality is not available on the server.");
+      return;
+    }
+  
     if (navigator.clipboard && navigator.clipboard.writeText) {
       try {
         await navigator.clipboard.writeText(text);
@@ -74,28 +82,11 @@ export const BentoGridItem = ({
         }, 8000);
       } catch (err) {
         console.error("Failed to copy text to clipboard: ", err);
-        alert("Failed to copy the email address. Please try manually.");
+        alert("Failed to copy the email address. Please try manually maheshbhosale1212004@gmail.com.");
       }
     } else {
       // Fallback for browsers that don't support `navigator.clipboard`
-      const textArea = document.createElement("textarea");
-      textArea.value = text;
-      textArea.style.position = "fixed"; // Prevent scrolling to the bottom of the page
-      textArea.style.opacity = "0"; // Invisible textarea
-      document.body.appendChild(textArea);
-      textArea.select();
-      try {
-        document.execCommand("copy");
-        setCopied(true);
-
-        setTimeout(() => {
-          setCopied(false);
-        }, 8000);
-      } catch (err) {
-        console.error("Fallback: Failed to copy text: ", err);
-        alert("Failed to copy the email address. Please try manually.");
-      }
-      document.body.removeChild(textArea);
+        alert("Fallback for browsers that don't support (navigator.clipboard). Please try manually maheshbhosale1212004@gmail.com.");
     }
   };
   
@@ -209,7 +200,7 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie eventListeners={[]} options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton

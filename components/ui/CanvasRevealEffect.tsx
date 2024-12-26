@@ -1,8 +1,12 @@
 "use client";
 import { cn } from "@/utils/cn";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+// import dynamic from "next/dynamic";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
+
+// Dynamically import Canvas with no SSR
+// const DynamicCanvas = dynamic(() => import('@react-three/fiber').then(mod => mod.Canvas), { ssr: false });
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -203,7 +207,7 @@ const ShaderMaterial = ({
     }
     lastFrameTime = timestamp;
 
-    const material = ref.current.material as THREE.ShaderMaterial;
+    const material = ref.current!.material as THREE.ShaderMaterial;
     const timeLocation = material.uniforms.u_time;
     timeLocation.value = timestamp;
   });

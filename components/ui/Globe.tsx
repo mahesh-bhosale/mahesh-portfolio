@@ -5,6 +5,7 @@ import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
+import dynamic from "next/dynamic";
 declare module "@react-three/fiber" {
   interface ThreeElements {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
@@ -60,7 +61,10 @@ interface WorldProps {
 
 let numbersOfRings = [0];
 
-export function Globe({ globeConfig, data }: WorldProps) {
+// Dynamic import for Globe component to avoid SSR issues
+const Globe = dynamic(() => Promise.resolve(GlobeComponent), { ssr: false });
+
+function GlobeComponent({ globeConfig, data }: WorldProps) {
   const [globeData, setGlobeData] = useState<
     | {
         size: number;
@@ -234,9 +238,14 @@ export function WebGLRendererConfig() {
   const { gl, size } = useThree();
 
   useEffect(() => {
-    gl.setPixelRatio(window.devicePixelRatio);
-    gl.setSize(size.width, size.height);
-    gl.setClearColor(0xffaaff, 0);
+    // gl.setPixelRatio(window.devicePixelRatio);
+    // gl.setSize(size.width, size.height);
+    // gl.setClearColor(0xffaaff, 0);
+    if (typeof window !== 'undefined') {
+      gl.setPixelRatio(window.devicePixelRatio);
+      gl.setSize(size.width, size.height);
+      gl.setClearColor(0xffaaff, 0);
+    }
   }, []);
 
   return null;
