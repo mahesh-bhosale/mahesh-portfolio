@@ -1,9 +1,46 @@
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
-
-import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
-import Image from "next/image";
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
+import { FloatingDock } from "./ui/floating-dock";
+
+  const links = [
+    {
+      title: "GitHub",
+      icon: (
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://github.com/mahesh-bhosale",
+    },
+    {
+      title: "Twitter",
+      icon: (
+        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://x.com/MaheshB47410026?t=__4ZVLUaogwLdcUNUZ5hZQ&s=08",
+    },
+    {
+      title: "LinkedIn",
+      icon: (
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://www.linkedin.com/in/mahesh-bhosale-ba7752257/",
+    },
+    {
+      title: "Instagram",
+      icon: (
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://www.instagram.com/maheshbhosale45/",
+    },
+    {
+      title: "Resume",
+      icon: (
+        <FaLocationArrow className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/resume.pdf",
+    },
+  ];
 const Footer = () => {
   return (
     <footer className="w-full mb-[100px] md:mb-5 pb-10" id="contact">
@@ -31,14 +68,12 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <Image src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+          
+          <FloatingDock
+        mobileClassName="translate-y-20" // only for demo, remove for production
+        items={links}
+      />
+
         </div>
       </div>
     </footer>
