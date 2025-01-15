@@ -1,7 +1,7 @@
 import React from 'react'
-import { companies, testimonials } from '@/data'
+import {testimonials } from '@/data'
+// import { companies, testimonials } from '@/data'
 import { InfiniteMovingCards } from './ui/infiniteMovingCards'
-import Image from 'next/image';
 
 const Clients = () => {
   return (
